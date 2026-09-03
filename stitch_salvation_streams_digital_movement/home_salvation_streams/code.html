@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salvation Streams | Timeless Renewal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#cfdaf1",
+                      "surface-container-highest": "#d8e3fa",
+                      "on-tertiary-container": "#92928f",
+                      "background": "#f9f9ff",
+                      "on-tertiary-fixed": "#1b1c1a",
+                      "outline": "#75777e",
+                      "secondary": "#735c00",
+                      "surface": "#f9f9ff",
+                      "secondary-fixed": "#ffe088",
+                      "on-primary-fixed-variant": "#374765",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-container": "#e7eeff",
+                      "surface-container-low": "#f0f3ff",
+                      "primary-fixed": "#d7e2ff",
+                      "on-primary-container": "#8293b5",
+                      "primary-container": "#1a2b48",
+                      "tertiary-fixed-dim": "#c7c7c3",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#081b38",
+                      "on-secondary-fixed": "#241a00",
+                      "surface-bright": "#f9f9ff",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#4e5f7e",
+                      "surface-container-high": "#dee8ff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#464744",
+                      "on-surface-variant": "#44474d",
+                      "surface-variant": "#d8e3fa",
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "outline-variant": "#c5c6ce",
+                      "on-secondary-container": "#745c00",
+                      "inverse-surface": "#263142",
+                      "on-surface": "#111c2c",
+                      "on-primary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#031632",
+                      "secondary-fixed-dim": "#e9c349",
+                      "tertiary": "#151715",
+                      "secondary-container": "#fed65b",
+                      "primary-fixed-dim": "#b6c7eb",
+                      "on-secondary-fixed-variant": "#574500",
+                      "tertiary-fixed": "#e3e2df",
+                      "inverse-primary": "#b6c7eb",
+                      "on-background": "#111c2c",
+                      "tertiary-container": "#2a2b29"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-sm": "16px",
+                      "stack-md": "32px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "stack-lg": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "64px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+        .nav-scrolled {
+            background-color: rgba(3, 22, 50, 0.95) !important; /* primary */
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 6px -1px rgba(26, 43, 72, 0.1);
+        }
+        .nav-scrolled .text-primary {
+            color: #ffffff !important;
+        }
+        .nav-scrolled .text-on-surface-variant {
+            color: #cfdaf1 !important; /* surface-dim */
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 24px -1px rgba(26, 43, 72, 0.08);
+        }
+        
+        .shadow-soft {
+            box-shadow: 0 4px 12px rgba(26, 43, 72, 0.08);
+        }
+        .shadow-hover:hover {
+            box-shadow: 0 8px 24px rgba(26, 43, 72, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-secondary selection:text-on-secondary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 ease-in-out py-4" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<a class="font-headline-md text-headline-md font-bold text-primary transition-colors duration-300 nav-brand" href="#">
+                Salvation Streams
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300" href="#">Fellowships</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300" href="#">Missions</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300" href="#">Give</a>
+</div>
+<div class="hidden md:flex items-center">
+<button class="bg-secondary text-on-secondary-container px-6 py-2 rounded-lg font-label-md text-label-md shadow-soft shadow-hover transition-all duration-300 hover:scale-105">
+                    Join Us
+                </button>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-primary nav-brand">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<!-- Shader Background -->
+<div class="absolute inset-0 z-0 bg-primary/20">
+<!-- STITCH_SHADER_START:ANIMATION_2 class="absolute inset-0 w-full h-full" -->
+<div class="absolute inset-0 w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Slow, organic movement
+    float time = u_time * 0.15;
+    
+    // Create soft, flowing waves
+    float noise1 = sin(uv.x * 3.0 + time) * cos(uv.y * 2.0 - time * 0.8);
+    float noise2 = sin(uv.y * 4.0 - time * 1.2) * cos(uv.x * 2.5 + time * 0.5);
+    
+    // Base colors from design system (Deep Navy and a slightly lighter shade)
+    vec3 color1 = vec3(0.06, 0.10, 0.18); // #10192E
+    vec3 color2 = vec3(0.10, 0.17, 0.28); // #1A2B48
+    vec3 accent = vec3(0.83, 0.69, 0.22); // #D4AF37 (Gold)
+    
+    float mixFactor = (noise1 + noise2) * 0.5 + 0.5;
+    vec3 baseColor = mix(color1, color2, mixFactor);
+    
+    // Add a very subtle gold shimmer in the "light" areas
+    float shimmer = pow(mixFactor, 4.0) * 0.05;
+    vec3 finalColor = baseColor + accent * shimmer;
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-20">
+<div class="glass-card p-8 md:p-12 rounded-2xl max-w-4xl mx-auto fade-in-section">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm md:mb-stack-md leading-tight">
+                    A Movement of Faith &amp; Fellowship
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md max-w-2xl mx-auto">
+                    Experience spiritual renewal through local fellowships and global mission outreach. We are a community driven by timeless truth and modern action.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md text-label-md shadow-soft shadow-hover transition-all duration-300 hover:scale-105">
+                        Join a Fellowship
+                    </button>
+<button class="w-full sm:w-auto bg-surface text-primary border border-outline-variant px-8 py-3 rounded-lg font-label-md text-label-md shadow-soft shadow-hover transition-all duration-300 hover:border-secondary hover:text-secondary">
+                        Learn More
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Who We Are & Stats -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="fade-in-section">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-wider mb-2 block">Our Identity</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-sm">
+                            More Than a Location. A Movement.
+                        </h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg mb-6">
+                            Salvation Streams is not confined to four walls. We are a flowing movement of believers, establishing fellowships in homes, community centers, and across borders. Our focus is on genuine connection, spiritual growth, and impactful mission work, bringing the light of faith wherever we gather.
+                        </p>
+<a class="inline-flex items-center text-primary font-label-md hover:text-secondary transition-colors duration-300" href="#">
+                            Read Our Story <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-4 fade-in-section" style="transition-delay: 200ms;">
+<!-- Stats Grid -->
+<div class="bg-white p-6 rounded-xl shadow-soft border border-surface-variant text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">groups</span>
+<div class="font-display-lg text-primary stat-number" data-target="12">0</div>
+<div class="text-on-surface-variant font-caption text-caption uppercase tracking-wider mt-1">Fellowships</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-soft border border-surface-variant text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">public</span>
+<div class="font-display-lg text-primary stat-number" data-target="5">0</div>
+<div class="text-on-surface-variant font-caption text-caption uppercase tracking-wider mt-1">Nations Reached</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-soft border border-surface-variant text-center col-span-2">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">flight_takeoff</span>
+<div class="font-display-lg text-primary stat-number" data-target="20">0</div>
+<div class="text-on-surface-variant font-caption text-caption uppercase tracking-wider mt-1">Mission Trips Completed</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Fellowships -->
+<section class="py-stack-lg bg-surface-container-low relative overflow-hidden">
+<!-- Decorative blob -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-stack-lg fade-in-section">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Upcoming Fellowships</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto font-body-lg text-body-lg">
+                        Gather with believers in your region. Experience authentic worship and community in an intimate setting.
+                    </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Fellowship Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft shadow-hover transition-all duration-300 fade-in-section group">
+<div class="h-48 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A warm, brightly lit living room setting with a circle of comfortable chairs, bathed in soft afternoon sunlight filtering through large windows, evoking a sense of welcoming community and spiritual gathering. High-contrast modern photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6ZMLqHKqhRY48VagNL6U7OaTm7S1E5AhNEIWImcimFSd9zRsHGFDSr-gwOYtjxCgXiYHw1VUNbAfrJsiU_9w9jEVk4KkDvkb4Sh7gG9CPc6vKsESX7lQw7hKD_pcURpXNh0cQc5-Is4K7Tde0Vc9LadrJWHmU7wnh92GS1ONO7snqOXFGo4690LDY_2Nqx81KTVGB5rqcCk0p2qZkkyJY1nkD0Bfys1ImTO_br5xoKHRLpYk5VY5H4A"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-md text-xs">
+                                 This Sunday
+                             </div>
+</div>
+<div class="p-6">
+<div class="flex items-center text-secondary mb-2">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span class="font-caption text-caption uppercase tracking-wider">North Region</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Oakwood Community Gathering</h3>
+<p class="text-on-surface-variant mb-4 text-sm">A time of worship, shared testimony, and deep biblical study focused on the book of John.</p>
+<a class="text-primary font-label-md hover:text-secondary transition-colors flex items-center" href="#">
+                                RSVP Now <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Fellowship Card 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft shadow-hover transition-all duration-300 fade-in-section group" style="transition-delay: 150ms;">
+<div class="h-48 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An elegant, modern community hall space with high ceilings and minimalist decor. Sunlight streams across neat rows of seating. The color palette is composed of pristine whites and deep navy accents, creating a calm, reflective atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHZkAam6KMfVQ83Sf17zNv8AylePWWj8nYsaI6zvnNRnD4pcq8KrPe_a-3EoN5sKrWnS72QBwn94Mq9xZ2-LL21m_YdqqMbAmgX4VXqL1Xw8zLDzZyhm_sapOSJ0E3G45HZbyqqR0xhSmfZ_GNHNJ32S8d0kLtsFNqs4MsEVaS8dxnH7n1ZYJdZMyuAWIANotWy6vryOklFlH8UHH8m6rTOkiOeQUnAsLYLIBVmOk0aLBccHlewaAxkw"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-md text-xs">
+                                 Next Wednesday
+                             </div>
+</div>
+<div class="p-6">
+<div class="flex items-center text-secondary mb-2">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span class="font-caption text-caption uppercase tracking-wider">City Center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Midweek Renewal Service</h3>
+<p class="text-on-surface-variant mb-4 text-sm">Recharge your week with contemplative prayer and acoustic worship in the heart of the city.</p>
+<a class="text-primary font-label-md hover:text-secondary transition-colors flex items-center" href="#">
+                                RSVP Now <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Fellowship Card 3 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft shadow-hover transition-all duration-300 fade-in-section group" style="transition-delay: 300ms;">
+<div class="h-48 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene outdoor garden setting with scattered seating under large oak trees. The lighting is golden hour, casting long, warm shadows. The environment feels peaceful, inviting, and connected to nature. Minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD53e1Qzw6GR4SLsp7-MnU1MPR-_v5UCnTUykY8t2pgsv7VB0wh53yuw7ffjqkK6AhqQ8gNJshARHLu1ICumYNHGCk4rjkHeeKoY1LywjnH2jzjD-bxbwc4oX_gX_4UCqTvEDs_dsTNQZ9ILW6pJnrNbKjOLyb3pOmM6XVAzxbtfadCg2NYUPQZ52M4pqbQ_aHnFuEf_wCs-xIjmacWXQJHxyRCR5u8E0zWzA__PSKUF8fGBhSK0OxLjg"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-label-md text-xs">
+                                 Sept 15th
+                             </div>
+</div>
+<div class="p-6">
+<div class="flex items-center text-secondary mb-2">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+<span class="font-caption text-caption uppercase tracking-wider">Westside Park</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Outdoor Family Fellowship</h3>
+<p class="text-on-surface-variant mb-4 text-sm">Bring your family for a picnic-style fellowship featuring outdoor worship and children's activities.</p>
+<a class="text-primary font-label-md hover:text-secondary transition-colors flex items-center" href="#">
+                                RSVP Now <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Highlight -->
+<section class="py-stack-lg bg-primary text-on-primary relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 md:order-1 fade-in-section rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-auto object-cover aspect-video md:aspect-[4/3]" data-alt="A compelling documentary-style photograph of a community outreach project in Uganda. The scene captures vibrant smiles and dynamic interaction between volunteers and locals against a backdrop of a newly constructed community center. Warm, hopeful lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFwU9GAqqsso6QQLZiQ7vLPqmfwJwA1uM7dirOXt7dMHL3nNlxD2erEEM0KO3JqKsk5zeS6kcXNLNd2SU1HRbulMrFJVE6RVjO7QPb6Rh8epacZ6eAN4fj-lJ0dbsDNLpG6Lx8-sor6GYXfL8MVglM4NJUpISFpAbwipctCOI2WQx1PXtBgedZ67-y0rdj5EQbGe9_munwJw_U_2oJrMulXD0s_sSyp-7jOWjMX2MXC9XC9QUiAso-vg"/>
+</div>
+<div class="order-1 md:order-2 fade-in-section">
+<span class="text-secondary-fixed font-label-md text-label-md uppercase tracking-wider mb-2 block flex items-center">
+<span class="material-symbols-outlined mr-2 text-sm">flare</span> Featured Mission
+                        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-sm text-on-primary">
+                            Hope &amp; Healing in Uganda
+                        </h2>
+<p class="text-surface-variant/80 font-body-lg text-body-lg mb-6">
+                            Our recent mission to Uganda focused on establishing a clean water source and partnering with local leaders for pastoral training. Through the generosity of our streams, we witnessed incredible spiritual and physical renewal in the community of Jinja.
+                        </p>
+<!-- Donation Block Style -->
+<div class="border border-secondary/30 bg-white/5 rounded-xl p-4 mb-6 backdrop-blur-sm">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-md text-on-primary">Current Goal: Clean Water Initiative</span>
+<span class="text-secondary-fixed font-bold">75%</span>
+</div>
+<!-- Progress Stream -->
+<div class="w-full bg-primary-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed h-full rounded-full w-[75%] relative overflow-hidden">
+<div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary-container px-6 py-3 rounded-lg font-label-md text-label-md shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(255,224,136,0.3)]">
+                                Support This Mission
+                            </button>
+<button class="bg-transparent text-on-primary border border-surface-variant/30 px-6 py-3 rounded-lg font-label-md text-label-md transition-all duration-300 hover:bg-white/10">
+                                Read Report
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-tertiary-container mt-auto relative z-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-md">
+<div class="flex flex-col gap-4">
+<a class="font-headline-md text-headline-md text-secondary-fixed" href="#">
+                    Salvation Streams
+                </a>
+<p class="text-surface-variant/80 font-caption text-caption max-w-sm">
+                    © 2024 Salvation Streams. Timeless Renewal. Building community through faith, local fellowships, and global missions.
+                </p>
+</div>
+<div class="flex flex-wrap gap-8 md:gap-12">
+<div class="flex flex-col gap-2">
+<a class="text-surface-variant/80 hover:text-white font-caption text-caption hover:scale-105 transition-transform duration-300" href="#">Fellowships</a>
+<a class="text-surface-variant/80 hover:text-white font-caption text-caption hover:scale-105 transition-transform duration-300" href="#">Missions</a>
+<a class="text-surface-variant/80 hover:text-white font-caption text-caption hover:scale-105 transition-transform duration-300" href="#">Give</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-surface-variant/80 hover:text-white font-caption text-caption hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+<a class="text-surface-variant/80 hover:text-white font-caption text-caption hover:scale-105 transition-transform duration-300" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                }
+            });
+
+            // Fade In Observer
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        
+                        // Trigger stat counter if it's the stats section
+                        if(entry.target.querySelector('.stat-number')) {
+                            const stats = entry.target.querySelectorAll('.stat-number');
+                            stats.forEach(stat => {
+                                const target = parseInt(stat.getAttribute('data-target'));
+                                animateValue(stat, 0, target, 2000);
+                                stat.classList.remove('stat-number'); // Prevent re-triggering
+                            });
+                        }
+                        
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            fadeElements.forEach(element => {
+                fadeObserver.observe(element);
+            });
+            
+            // Stat Counter Animation Function
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    // ease out quad
+                    const easeProgress = progress * (2 - progress); 
+                    obj.innerHTML = Math.floor(easeProgress * (end - start) + start) + (end > 10 ? '+' : '');
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" width="520" height="140">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3AA6D9"/>
+      <stop offset="100%" stop-color="#0B3C5D"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,10)">
+    <path d="M20 30 L70 30 L100 60 L50 60 Z" fill="url(#g1)"/>
+    <path d="M100 60 L50 60 L20 90 L70 90 Z" fill="#0B3C5D"/>
+    <path d="M20 30 Q10 60 20 90" stroke="url(#g1)" stroke-width="18" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="140" y="55" font-family="Sora, sans-serif" font-weight="700" font-size="34" fill="#0B3C5D">SALVATION</text>
+  <text x="140" y="92" font-family="Sora, sans-serif" font-weight="700" font-size="34" fill="#0B3C5D">STREAMS</text>
+  <text x="140" y="112" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="14" letter-spacing="3" fill="#3AA6D9">OUTREACH MISSIONS</text>
+</svg>

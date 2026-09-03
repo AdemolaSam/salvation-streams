@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fellowships - Salvation Streams</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#cfdaf1",
+                        "surface-container-highest": "#d8e3fa",
+                        "on-tertiary-container": "#92928f",
+                        "background": "#f9f9ff",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "outline": "#75777e",
+                        "secondary": "#735c00",
+                        "surface": "#f9f9ff",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-fixed-variant": "#374765",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container": "#e7eeff",
+                        "surface-container-low": "#f0f3ff",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-container": "#8293b5",
+                        "primary-container": "#1a2b48",
+                        "tertiary-fixed-dim": "#c7c7c3",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#081b38",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#4e5f7e",
+                        "surface-container-high": "#dee8ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#464744",
+                        "on-surface-variant": "#44474d",
+                        "surface-variant": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c5c6ce",
+                        "on-secondary-container": "#745c00",
+                        "inverse-surface": "#263142",
+                        "on-surface": "#111c2c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#031632",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary": "#151715",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-fixed": "#e3e2df",
+                        "inverse-primary": "#b6c7eb",
+                        "on-background": "#111c2c",
+                        "tertiary-container": "#2a2b29"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}]
+                    },
+                    boxShadow: {
+                        'ambient-1': '0 4px 12px rgba(26, 43, 72, 0.08)',
+                        'ambient-2': '0 8px 24px rgba(26, 43, 72, 0.12)',
+                        'glow-gold': '0 0 15px rgba(254, 214, 91, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Ambient subtle grid background */
+        body {
+            background-color: theme('colors.background');
+            background-image: 
+                linear-gradient(to right, rgba(26, 43, 72, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(26, 43, 72, 0.02) 1px, transparent 1px);
+            background-size: 64px 64px;
+        }
+    </style>
+</head>
+<body class="text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-background/80 dark:bg-primary/80 backdrop-blur-md fixed top-0 w-full z-50 bg-surface/90 dark:bg-inverse-surface/90 shadow-sm transition-all duration-300 ease-in-out shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">
+                Salvation Streams
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-stack-md font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-all duration-300" href="#">Fellowships</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Missions</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Give</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:shadow-ambient-2 hover:-translate-y-0.5 transition-all duration-300">
+                    Join Us
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop min-h-screen flex flex-col gap-stack-lg">
+<!-- Hero Section -->
+<section class="flex flex-col gap-stack-sm max-w-3xl mt-stack-md">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-primary tracking-tight">
+                Where We Gather
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Find a fellowship point near you. We meet in homes, halls, and hearts across the region, cultivating spaces of timeless renewal and modern grace.
+            </p>
+</section>
+<!-- Map Concept Section -->
+<section class="w-full relative rounded-xl overflow-hidden shadow-ambient-1 bg-surface-container-lowest group cursor-default">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent z-10 pointer-events-none rounded-xl"></div>
+<div class="bg-cover bg-center w-full h-[400px] md:h-[500px] transition-transform duration-700 group-hover:scale-105" data-alt="An elegant, minimalist vector illustration of a regional map drawn in fine deep navy blue lines on a pristine off-white background. The map features subtle, glowing gold accent dots indicating key gathering locations. The visual style is sophisticated, editorial, and clean, conveying a sense of spiritual connection and high-end modern design without any clutter. The lighting implies a soft, uplifting light-mode aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGOPxV37Gp0TkW-xQlAGLG87eC7xIG98lFCLnw7SBOACCZWOpfKIZpn6suDHPM2dAK1jAGhvlcJiFcgNNZl1BZS9DWaB1v-vS0EXzCviY975KqbYDL2kbEubV48R9lSXkjT5cRfn2ImPkEc5qedogk0d551qwZ3fJw7SnTcMD9X_NUvYo8dW1w11to30wFhVHiIaDBMnuoWFP64qEP6T_SnmGsmImjl2g-tjL54idUgNBd7WO-6npchA')"></div>
+<!-- Map Overlay Info Box -->
+<div class="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-20 bg-surface/95 backdrop-blur-sm p-6 rounded-lg shadow-ambient-2 max-w-sm border border-surface-container-highest">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary icon-fill">location_on</span>
+<h3 class="font-headline-md text-headline-md text-primary text-[20px] leading-tight">Active Regions</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Over 50 active fellowships gathering weekly in homes and community halls across the metro area.</p>
+</div>
+</section>
+<!-- Directory Grid -->
+<section class="flex flex-col gap-stack-md">
+<div class="flex justify-between items-end border-b border-surface-container-highest pb-4">
+<h2 class="font-headline-md text-headline-md text-primary">Fellowship Directory</h2>
+<div class="hidden md:flex gap-2">
+<button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="text-surface-tint hover:text-primary transition-colors"><span class="material-symbols-outlined">view_list</span></button>
+</div>
+</div>
+<!-- Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-[16px] p-6 shadow-ambient-1 border border-surface-container-highest hover:shadow-ambient-2 transition-shadow duration-300 flex flex-col justify-between h-full group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 bg-surface-container text-primary text-caption font-caption rounded-full mb-4 font-semibold uppercase tracking-wider">Lagos Region</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1 text-[24px]">Ikeja Central</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">A vibrant gathering focused on deep scriptural study and community outreach in the heart of the mainland.</p>
+<div class="flex flex-col gap-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">schedule</span>
+<span class="font-body-md text-body-md text-[14px]">Wednesdays, 6:30 PM</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">person</span>
+<span class="font-body-md text-body-md text-[14px]">Elder David O.</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-3 rounded-lg hover:bg-secondary-fixed hover:shadow-glow-gold transition-all duration-300 relative z-10 flex items-center justify-center gap-2">
+<span>Join Fellowship</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-[16px] p-6 shadow-ambient-1 border border-surface-container-highest hover:shadow-ambient-2 transition-shadow duration-300 flex flex-col justify-between h-full group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 bg-surface-container text-primary text-caption font-caption rounded-full mb-4 font-semibold uppercase tracking-wider">Lagos Region</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1 text-[24px]">Lekki Peninsula</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Contemporary worship and reflective discussions suited for young professionals and growing families.</p>
+<div class="flex flex-col gap-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">schedule</span>
+<span class="font-body-md text-body-md text-[14px]">Thursdays, 7:00 PM</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">person</span>
+<span class="font-body-md text-body-md text-[14px]">Pastor Sarah T.</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-3 rounded-lg hover:bg-secondary-fixed hover:shadow-glow-gold transition-all duration-300 relative z-10 flex items-center justify-center gap-2">
+<span>Join Fellowship</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-[16px] p-6 shadow-ambient-1 border border-surface-container-highest hover:shadow-ambient-2 transition-shadow duration-300 flex flex-col justify-between h-full group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 bg-surface-container text-primary text-caption font-caption rounded-full mb-4 font-semibold uppercase tracking-wider">FCT Region</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1 text-[24px]">Abuja Garki</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">A serene gathering emphasizing contemplative prayer, acoustic worship, and close-knit support.</p>
+<div class="flex flex-col gap-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">schedule</span>
+<span class="font-body-md text-body-md text-[14px]">Tuesdays, 6:00 PM</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">person</span>
+<span class="font-body-md text-body-md text-[14px]">Bro. Emmanuel A.</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-label-md text-label-md py-3 rounded-lg hover:bg-secondary-fixed hover:shadow-glow-gold transition-all duration-300 relative z-10 flex items-center justify-center gap-2">
+<span>Join Fellowship</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-stack-md bg-primary rounded-[24px] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-ambient-2 relative overflow-hidden">
+<!-- Decorative blur element -->
+<div class="absolute top-0 right-0 w-[300px] h-[300px] bg-secondary/20 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div class="flex flex-col gap-4 max-w-xl relative z-10 text-center md:text-left">
+<h2 class="font-headline-md text-headline-md text-on-primary">Start a Fellowship in Your Area</h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim">
+                    Don't see a gathering near you? We provide the resources, guidance, and spiritual covering to help you open your home or local hall as a beacon of light in your community.
+                </p>
+</div>
+<button class="shrink-0 bg-secondary-container text-on-secondary-container font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-secondary-fixed hover:shadow-glow-gold hover:-translate-y-1 transition-all duration-300 relative z-10">
+                Become a Host
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary font-caption text-caption no shadows">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-md">
+<!-- Brand & Copyright -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md text-secondary-fixed tracking-tight">Salvation Streams</span>
+<p class="text-surface-variant/80">© 2024 Salvation Streams. Timeless Renewal.</p>
+</div>
+<!-- Links -->
+<nav class="flex flex-wrap gap-6 md:gap-8">
+<a class="text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Fellowships</a>
+<a class="text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Missions</a>
+<a class="text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Give</a>
+<a class="text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+<a class="text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Privacy</a>
+</nav>
+</div>
+</footer>
+</body></html>

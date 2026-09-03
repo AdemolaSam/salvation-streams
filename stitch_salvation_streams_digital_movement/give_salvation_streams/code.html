@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salvation Streams - Support the Movement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#cfdaf1",
+                        "surface-container-highest": "#d8e3fa",
+                        "on-tertiary-container": "#92928f",
+                        "background": "#f9f9ff",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "outline": "#75777e",
+                        "secondary": "#735c00",
+                        "surface": "#f9f9ff",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-fixed-variant": "#374765",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-container": "#e7eeff",
+                        "surface-container-low": "#f0f3ff",
+                        "primary-fixed": "#d7e2ff",
+                        "on-primary-container": "#8293b5",
+                        "primary-container": "#1a2b48",
+                        "tertiary-fixed-dim": "#c7c7c3",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#081b38",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#4e5f7e",
+                        "surface-container-high": "#dee8ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#464744",
+                        "on-surface-variant": "#44474d",
+                        "surface-variant": "#d8e3fa",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c5c6ce",
+                        "on-secondary-container": "#745c00",
+                        "inverse-surface": "#263142",
+                        "on-surface": "#111c2c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#031632",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary": "#151715",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-fixed": "#e3e2df",
+                        "inverse-primary": "#b6c7eb",
+                        "on-background": "#111c2c",
+                        "tertiary-container": "#2a2b29"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .shadow-level-1 { box-shadow: 0 4px 12px rgba(26, 43, 72, 0.08); }
+        .shadow-level-2 { box-shadow: 0 8px 24px rgba(26, 43, 72, 0.08); }
+        .gold-glow:hover { box-shadow: 0 0 15px rgba(233, 195, 73, 0.4); }
+        
+        .toast-enter {
+            animation: slideUpFade 0.3s ease-out forwards;
+        }
+        
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(20px) translateX(-50%); }
+            to { opacity: 1; transform: translateY(0) translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 dark:bg-primary/80 backdrop-blur-md bg-surface/90 dark:bg-inverse-surface/90 shadow-sm dark:shadow-none transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">
+                Salvation Streams
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Fellowships</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-all duration-300" href="#">Missions</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-all duration-300" href="#">Give</a>
+</div>
+<button class="hidden md:block bg-secondary text-on-secondary-fixed font-label-md text-label-md px-6 py-2 rounded-full gold-glow transition-all duration-300 shadow-level-1">
+                Join Us
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Header Section -->
+<div class="text-center mb-stack-lg max-w-3xl mx-auto">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm md:font-display-lg font-headline-lg-mobile text-headline-lg-mobile">
+                Support the Movement
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Your generosity fuels our mission outreach and supports fellowships across regions.
+            </p>
+</div>
+<!-- Donation Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md lg:gap-gutter">
+<!-- Column 1: Online Giving -->
+<div class="bg-surface-container-lowest rounded-xl shadow-level-1 p-stack-md border border-outline-variant/30 flex flex-col h-full">
+<div class="flex items-center gap-unit mb-stack-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h2 class="font-headline-md text-headline-md text-primary">Online Giving</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">
+                    Select an amount below for a quick and secure online donation via card or mobile money.
+                </p>
+<div class="grid grid-cols-3 gap-unit mb-stack-md">
+<button class="preset-btn py-3 rounded-lg border border-outline-variant text-on-surface hover:border-secondary hover:text-secondary hover:bg-secondary/5 transition-colors font-label-md text-label-md" data-amount="5000">
+                        ₦5k
+                    </button>
+<button class="preset-btn py-3 rounded-lg border-2 border-secondary text-secondary bg-secondary/10 font-label-md text-label-md transition-colors" data-amount="10000">
+                        ₦10k
+                    </button>
+<button class="preset-btn py-3 rounded-lg border border-outline-variant text-on-surface hover:border-secondary hover:text-secondary hover:bg-secondary/5 transition-colors font-label-md text-label-md" data-amount="20000">
+                        ₦20k
+                    </button>
+</div>
+<div class="mb-stack-md">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-unit">Custom Amount (₦)</label>
+<input class="w-full bg-surface border border-outline-variant rounded-lg px-4 py-3 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md transition-shadow" placeholder="Enter amount" type="number" value="10000"/>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-lg shadow-level-1 hover:shadow-level-2 hover:-translate-y-0.5 transition-all duration-300">
+                    Give Now
+                </button>
+</div>
+<!-- Column 2: Bank Transfer -->
+<div class="bg-primary-container text-on-primary-container rounded-xl shadow-level-1 p-stack-md border border-secondary/20 flex flex-col h-full relative overflow-hidden">
+<!-- Subtle background accent -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+<div class="flex items-center gap-unit mb-stack-sm relative z-10">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<h2 class="font-headline-md text-headline-md text-on-primary">Bank Transfer</h2>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim mb-stack-md flex-grow relative z-10">
+                    Make a direct transfer to our central missions account. Your support ensures the continued reach of our fellowships.
+                </p>
+<div class="bg-inverse-surface/50 rounded-lg p-stack-sm border border-secondary/30 relative z-10 mb-stack-md">
+<div class="mb-unit">
+<span class="block font-caption text-caption text-tertiary-fixed-dim uppercase tracking-wider">Bank</span>
+<span class="font-body-lg text-body-lg text-on-primary font-semibold">Salvation Trust Bank</span>
+</div>
+<div class="mb-unit">
+<span class="block font-caption text-caption text-tertiary-fixed-dim uppercase tracking-wider">Account Name</span>
+<span class="font-body-lg text-body-lg text-on-primary font-semibold">Salvation Streams Missions</span>
+</div>
+<div class="mt-stack-sm pt-stack-sm border-t border-outline/30 flex justify-between items-end">
+<div>
+<span class="block font-caption text-caption text-tertiary-fixed-dim uppercase tracking-wider mb-1">Account Number</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-fixed tracking-widest block" id="account-number">0123456789</span>
+</div>
+<button class="bg-secondary/20 hover:bg-secondary/40 text-secondary-fixed p-2 rounded-full transition-colors flex items-center justify-center mb-1 group" id="copy-btn" title="Copy Account Number">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 0;">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 text-primary-fixed-dim bg-inverse-surface/30 p-3 rounded-lg relative z-10">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-caption text-caption">100% of mission donations go directly to the field.</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-tertiary-container mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-md">
+<div>
+<div class="font-headline-md text-headline-md text-secondary-fixed mb-unit">
+                    Salvation Streams
+                </div>
+<div class="font-caption text-caption text-on-primary dark:text-on-tertiary opacity-80">
+                    © 2024 Salvation Streams. Timeless Renewal.
+                </div>
+</div>
+<div class="flex flex-wrap gap-x-6 gap-y-2">
+<a class="font-caption text-caption text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Fellowships</a>
+<a class="font-caption text-caption text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Missions</a>
+<a class="font-caption text-caption text-secondary-fixed font-bold hover:scale-105 transition-transform duration-300" href="#">Give</a>
+<a class="font-caption text-caption text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+<a class="font-caption text-caption text-surface-variant/80 hover:text-white hover:scale-105 transition-transform duration-300" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+<!-- Toast Notification -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-surface text-on-surface px-6 py-3 rounded-full shadow-level-2 border border-secondary/50 font-label-md text-label-md flex items-center gap-2 z-50 hidden" id="toast">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        Account number copied!
+    </div>
+<script>
+        // Preset button logic
+        const presetBtns = document.querySelectorAll('.preset-btn');
+        const customInput = document.querySelector('input[type="number"]');
+
+        presetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Reset styles
+                presetBtns.forEach(b => {
+                    b.classList.remove('border-2', 'border-secondary', 'text-secondary', 'bg-secondary/10');
+                    b.classList.add('border', 'border-outline-variant', 'text-on-surface');
+                });
+                // Set active style
+                btn.classList.remove('border', 'border-outline-variant', 'text-on-surface');
+                btn.classList.add('border-2', 'border-secondary', 'text-secondary', 'bg-secondary/10');
+                
+                // Update input
+                customInput.value = btn.dataset.amount;
+            });
+        });
+
+        // Copy interaction logic
+        const copyBtn = document.getElementById('copy-btn');
+        const accNumber = document.getElementById('account-number').innerText;
+        const toast = document.getElementById('toast');
+
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(accNumber).then(() => {
+                // Show toast
+                toast.classList.remove('hidden');
+                toast.classList.add('toast-enter');
+                
+                // Icon animation on button
+                const icon = copyBtn.querySelector('span');
+                icon.innerText = 'check';
+                copyBtn.classList.add('bg-secondary', 'text-on-secondary-fixed');
+                copyBtn.classList.remove('bg-secondary/20', 'text-secondary-fixed');
+
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                    toast.classList.remove('toast-enter');
+                    
+                    // Reset icon
+                    icon.innerText = 'content_copy';
+                    copyBtn.classList.remove('bg-secondary', 'text-on-secondary-fixed');
+                    copyBtn.classList.add('bg-secondary/20', 'text-secondary-fixed');
+                }, 3000);
+            });
+        });
+    </script>
+</body></html>
