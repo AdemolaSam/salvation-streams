@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salvation Streams Outreach Missions</title>
+    <script></script>
+      (function restoreGitHubPagesRoute(locationRef) {
+        if (locationRef.search[1] !== '/') return;
+
+        var decodedRoute = locationRef.search
+          .slice(1)
+          .split('&')
+          .map(function (segment) {
+            return segment.replace(/~and~/g, '&');
+          })
+          .join('?');
+
+        window.history.replaceState(
+          null,
+          null,
+          locationRef.pathname.slice(0, -1) + decodedRoute + locationRef.hash,
+        );
+      })(window.location);
+    </script>
     <meta name="description" content="Reaching the nations with hope, healing, and the Gospel — medical outreach, crusades, relief, and discipleship." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/AdemolaSam/salvation-streams",
+  "homepage": "https://AdemolaSam.github.io/salvation-streams/",
   "name": "salvation-streams",
   "private": true,
   "version": "1.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
+    "predeploy": "VITE_BASE_PATH=/salvation-streams/ npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
