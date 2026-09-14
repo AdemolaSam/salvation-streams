@@ -5,7 +5,7 @@
  * To swap a placeholder image for a real photo:
  *   1. Drop your real image file into: src/assets/images/
  *   2. Update the matching `image:` path below to point to it, e.g.
- *      image: "/src/assets/images/pastor-john-doe.jpg"
+ *      image: img('pastor-john-doe.jpg')
  *   OR simply replace the placeholder file that already sits at that
  *   path (same filename) and nothing else needs to change.
  *
@@ -13,7 +13,7 @@
  * src/assets/images/ so the app runs out of the box.
  */
 
-const img = (name) => `/src/assets/images/${name}`
+const img = (name) => new URL(`../assets/images/${name}`, import.meta.url).href
 
 export const brand = {
   name: 'Salvation Streams',
