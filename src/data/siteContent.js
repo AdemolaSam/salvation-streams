@@ -23,9 +23,9 @@ export const brand = {
   email: 'contact@salvationstreams.org',
   address: 'Lagos, Nigeria — with outreach offices supporting missions across Africa, Europe, and North America',
   social: {
-    facebook: 'https://facebook.com',
-    instagram: 'https://instagram.com',
-    youtube: 'https://youtube.com',
+    facebook: 'https://facebook.com/EvangelistOwie',
+    instagram: 'https://instagram.com/evangelistowie',
+    youtube: 'https://youtube.com/@EvangelistOwie',
     tiktok: 'https://tiktok.com',
   },
   logo: {

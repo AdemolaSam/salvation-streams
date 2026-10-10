@@ -11,14 +11,17 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white">
-      <div className="max-w-container mx-auto px-4 md:px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="relative bg-navy text-white border-t-4 border-primary overflow-hidden">
+      <div className="absolute inset-0 bg-grid-dark pointer-events-none" aria-hidden="true" />
+      <div className="absolute -top-24 right-0 w-96 h-96 bg-primary/20 blur-3xl rounded-full pointer-events-none" aria-hidden="true" />
+
+      <div className="relative max-w-container mx-auto px-4 md:px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="flex flex-col gap-4">
           <img src={brand.logo.stacked} alt={`${brand.name} logo`} className="h-24 w-auto" />
           <p className="text-white/70 text-sm leading-relaxed">
             Reaching the unreached, healing the sick, and bringing hope through the Gospel of Jesus Christ.
           </p>
-          <div className="flex gap-4 pt-1">
+          <div className="flex gap-3 pt-1">
             {socialIcons.map(({ href, Icon, label }) => (
               <a
                 key={label}
@@ -26,20 +29,20 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={label}
-                className="text-white/70 hover:text-white transition-colors"
+                className="w-9 h-9 grid place-items-center rounded-full border border-white/15 text-white/70 transition-all duration-200 ease-enter hover:text-white hover:border-primary hover:bg-primary hover:-translate-y-0.5"
               >
-                <Icon size={20} />
+                <Icon size={18} />
               </a>
             ))}
           </div>
         </div>
 
         <div>
-          <h4 className="font-semibold text-accent mb-4 text-sm tracking-wide uppercase">Organization</h4>
+          <h4 className="font-heading font-semibold text-primary mb-4 text-sm tracking-wide uppercase">Organization</h4>
           <ul className="space-y-2.5">
             {nav.slice(0, 4).map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-white/70 hover:text-white text-sm transition-colors">
+                <Link to={item.to} className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">
                   {item.label}
                 </Link>
               </li>
@@ -48,18 +51,18 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-accent mb-4 text-sm tracking-wide uppercase">Resources</h4>
+          <h4 className="font-heading font-semibold text-primary mb-4 text-sm tracking-wide uppercase">Resources</h4>
           <ul className="space-y-2.5">
-            <li><Link to="/testimonies" className="text-white/70 hover:text-white text-sm transition-colors">Testimonies</Link></li>
-            <li><Link to="/sermons" className="text-white/70 hover:text-white text-sm transition-colors">Sermons</Link></li>
-            <li><Link to="/give" className="text-white/70 hover:text-white text-sm transition-colors">Give</Link></li>
-            <li><Link to="/privacy" className="text-white/70 hover:text-white text-sm transition-colors">Privacy Policy</Link></li>
-            <li><Link to="/terms" className="text-white/70 hover:text-white text-sm transition-colors">Terms of Service</Link></li>
+            <li><Link to="/testimonies" className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">Testimonies</Link></li>
+            <li><Link to="/sermons" className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">Sermons</Link></li>
+            <li><Link to="/give" className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">Give</Link></li>
+            <li><Link to="/privacy" className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">Terms of Service</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-semibold text-accent mb-4 text-sm tracking-wide uppercase">Contact</h4>
+          <h4 className="font-heading font-semibold text-primary mb-4 text-sm tracking-wide uppercase">Contact</h4>
           <ul className="space-y-3 text-sm text-white/70">
             <li className="flex items-start gap-2">
               <Mail size={16} className="mt-0.5 shrink-0" />
@@ -70,11 +73,11 @@ export default function Footer() {
               <span>{brand.address}</span>
             </li>
           </ul>
-          <h4 className="font-semibold text-accent mt-6 mb-3 text-sm tracking-wide uppercase">Our Work</h4>
+          <h4 className="font-heading font-semibold text-primary mt-6 mb-3 text-sm tracking-wide uppercase">Our Work</h4>
           <ul className="space-y-2.5">
             {activities.map((a) => (
               <li key={a.id}>
-                <Link to={`/activities#${a.id}`} className="text-white/70 hover:text-white text-sm transition-colors">
+                <Link to={`/activities#${a.id}`} className="inline-block text-white/70 hover:text-white text-sm transition-all duration-200 hover:translate-x-1">
                   {a.title}
                 </Link>
               </li>
@@ -83,7 +86,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-white/50 text-sm">
+      <div className="relative border-t border-white/10 py-6 text-center text-white/50 text-sm">
         © {new Date().getFullYear()} {brand.name} {brand.tagline}. All rights reserved.
       </div>
     </footer>

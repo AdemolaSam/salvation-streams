@@ -84,9 +84,13 @@ src/
 
 ## Design decisions carried over from the approved Stitch design
 
-- Color palette: Deep Ocean Blue (`#0B3C5D`) primary, Sky Blue (`#3AA6D9`) secondary/links, Sunrise Gold
-  (`#F2A93B`) reserved for CTAs only, off-white surface background — see `tailwind.config.js`.
-- Fonts: Sora (headings) + Source Sans 3 (body), loaded via Google Fonts in `index.html`.
+- Color palette: high-contrast **Black / Red / White** system — a near-black canvas (`#08080A`) with
+  Signal Red (`#E50914`) as the single accent (links, icons, CTAs) and off-white (`#FAFAFA`) type.
+  See `tailwind.config.js`.
+- Fonts: Righteous (headings) + Inter (body), loaded via Google Fonts in `index.html`.
+- Motion: subtle scroll reveals (`Reveal.jsx` / `Section`), staggered hero entrance, animated nav
+  underline, card hover lift, button shine, and a red marquee ticker — all honoring
+  `prefers-reduced-motion` (see `src/index.css`).
 - Sticky nav with a visually distinct "Give" button, always reachable while scrolling.
 - Testimony videos show "Captions on" by default instead of an "Enable Sound" toggle (accessibility fix).
 - Impact counters include a visible "Updated [date] — see full impact report" line for credibility.
