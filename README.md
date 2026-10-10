@@ -96,7 +96,7 @@ src/
 - Impact counters include a visible "Updated [date] — see full impact report" line for credibility.
 - Every partner/leadership/testimony image is distinct — no repeated placeholder logos.
 - Single H1 per page, consistent heading hierarchy, no duplicated sections.
-- Events page includes country/activity filters and a clear "RSVP" vs. "Book Pastor [Name]" split CTA.
+- Events page includes country/activity filters and a clear "RSVP" vs. "Book Pastor [Charles Owie]" split CTA.
 - Give page shows fund designation, one-time/monthly toggle, and a transparent spending breakdown before payment.
 
 ## Known TODOs before going live
